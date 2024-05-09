@@ -1,0 +1,260 @@
+body {
+    background-color: #000;
+    color: #0f0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    background-color: #111;
+}
+
+h1, h2 {
+    color: #0f0;
+}
+
+section {
+    padding: 20px;
+    border-bottom: 1px solid #0f0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #111;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo para el carrusel */
+
+.slider {
+    width: 95vw;
+    height: auto;
+    overflow: hidden;
+    margin: 0;
+    padding: 27px;
+}
+
+.slider img {
+    width: 100%;  /* Ancho fijo */
+    height: auto;  /* Altura fija */
+    object-fit: contain;  /* Mantiene la relación de aspecto y ajusta la imagen completa dentro del contenedor */
+}
+
+
+
+/* seccion abajo de carussel*/
+
+.seccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #0F0;
+    background-color: #111;
+}
+
+/* Línea verde que separa la imagen del contenido */
+
+.seccion img {
+    max-width: 100%;
+    height: auto;
+}
+
+.seccion .contenido {
+    flex: 1;
+    margin: 0 20px;
+}
+
+/* Se añade el siguiente bloque de estilos para invertir la posición de la imagen y el contenido en cada sección par */
+.seccion:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.seccion a {
+    color: #0F0;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.seccion a:hover {
+    color: #F00;
+}
+
+
+
+
+
+
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-bottom: 1px solid #0f0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: #0f0;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F00;
+}
+
+
+
+
+
+
+
+
+/* Estilo de las secciones */
+.contenido-seccion {
+    display: none;
+
+}
+
+/* Estilo de la sección activa */
+.contenido-activo {
+    display: block;
+}
+
+
+
+
+
+pre {
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre-wrap; 
+}
+
+
+
+.kali_apartado_seccion {
+    border-top: 1px solid #0f0;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.kali_apartado_seccion h2 {
+    color: #0f0;
+    padding-right: 20px;
+}
+
+.imagen_desktop {
+    max-width: 100%;
+    text-align: center;
+    border-top: 1px solid #0f0;
+}
+
+.imagen_desktop img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    border-bottom: 1px solid #0f0;
+}
+
+
+
+
+.entornos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 120px;
+}
+
+
+.entornos img {
+    width: 700px;
+    height: 394px;
+    padding-left: 20px;
+}
+
+.entornos .contenido {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.entornos:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+code {
+    display: block;
+    padding: 20px;
+    background-color: #111;
+    border: 3px solid #0F0;
+    border-radius: 10px;
+    overflow-x: auto;
+    transition: background-color 0.3s ease; /* Transición de color de fondo */
+}
+
+code:hover {
+    background-color: #2b5329;
+}
+
+.imagenesnmap {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.imageneshydra {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.contenedorcuadro {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    border: 1px solid #0F0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.elementocuadro {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #0F0;
+    border-radius: 5px;
+}
+
+#pdfContainer {
+    width: 70%; /* Puedes ajustar el ancho según tus preferencias */
+}
+
+iframe {
+    width: 100%;
+    height: 400px; /* Puedes ajustar la altura según tus preferencias */
+    border: 1px solid #666;
+}

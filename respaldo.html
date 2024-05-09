@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web de Nmap</title>
+    <script src="https://cdn.jsdelivr.net/npm/tty.js@0.7.0/dist/tty.js"></script>
+</head>
+<body>
+    <!-- El resto de tu contenido HTML aquí -->
+
+    <section>
+        <h2>Simulación de Terminal</h2>
+        <div id="terminal"></div>
+    </section>
+
+    <script>
+        // JavaScript para la simulación de terminal utilizando tty.js
+        document.addEventListener('DOMContentLoaded', function() {
+            // Crear una instancia de tty.js
+            const term = new Terminal({
+                cols: 80,
+                rows: 24,
+            });
+
+            // Adjuntar la terminal al contenedor
+            term.open(document.getElementById('terminal'));
+
+            // Configuración de la terminal (puedes ajustar según sea necesario)
+            const socket = new WebSocket('wss://localhost:3000');
+            const termOptions = {
+                cursorBlink: true,
+                convertEol: true,
+                termName: 'xterm-256color',
+            };
+
+            const tty = new TTY(socket, termOptions);
+
+            // Manejar la conexión del socket
+            socket.addEventListener('open', function () {
+                tty.open();
+            });
+
+            // Manejar datos recibidos del socket
+            socket.addEventListener('message', function (event) {
+                tty.write(event.data);
+            });
+
+            // Enfocar la terminal para que el usuario pueda comenzar a escribir de inmediato
+            term.focus();
+        });
+    </script>
+</body>
+</html>

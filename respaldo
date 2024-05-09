@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CyberSec Hacker</title>
+</head>
+<body>
+    <header style="border-bottom: 1px solid #0f0;">
+        <h1>CyberSec Hacker</h1>
+        <p>Tu fuente de Herramientas para Haking Etico</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" onclick="mostrarContenido('kali')">Kali Linux</a></li>
+            <li><a href="#nmap" onclick="mostrarContenido('nmap')">Nmap</a></li>
+            <li><a href="#hydra" onclick="mostrarContenido('hydra')">Hydra</a></li>
+            <li><a href="#metasploit" onclick="mostrarContenido('metasploit')">Metasploit</a></li>
+            <li><a href="#netcat" onclick="mostrarContenido('netcat')">Netcat</a></li>
+            <li><a href="#hashcat" onclick="mostrarContenido('hashcat')">Hashcat</a></li>
+            <li><a href="#sqlmap" onclick="mostrarContenido('sqlmap')">Sqlmap</a></li>
+        </ul>
+    </nav>
+
+    <section id="recentArticles">
+        <div class="slider">
+        <div><img src="docs/kali.png" alt="Herramienta 1"></div>
+        <div><img src="docs/nmap-logo.svg" alt="Herramienta 2"></div>
+        <div><img src="docs/hydra.svg" alt="Herramienta 3"></div>
+        <div><img src="docs/meta.png" alt="Herramienta 4"></div>
+        <div><img src="docs/netcat.svg" alt="Herramienta 5"></div>
+        <div><img src="docs/hashcat.svg" alt="Herramienta 6"></div>
+        <div><img src="docs/sqlmap.svg" alt="Herramienta 7"></div>
+        <!-- Agrega más imágenes según sea necesario -->
+    </div>
+    </section>
+
+    <div class="seccion">
+        <img src="docs/kali.png" alt="Herramienta 1" height="400px" width="400px" style="border-right: 1px solid #0F0; border-left: 1px solid #0F0;">
+        <div class="contenido">
+            <h2>Kali Linux</h2>
+            <p>
+                Kali Linux es una distribución de Linux especializada en seguridad informática y pruebas de penetración. 
+                Está basada en Debian y es desarrollada y mantenida por Offensive Security, una empresa de seguridad informática.
+                <br>
+                <br>
+                Es importante destacar que el uso de herramientas de seguridad y pruebas
+                de penetración debe ser ético y legal. Utilizar estas herramientas de manera irresponsable
+                o sin el permiso adecuado puede resultar en consecuencias legales. Kali Linux se proporciona con la
+                intención de ser utilizada para fines éticos y legales en pruebas de seguridad.
+            </p>
+            <br>
+            <br>
+            <br>
+            <a href="https://www.kali.org/">Kali Homepage</a>
+        </div>
+    </div>
+
+    <div class="seccion">
+        <img src="docs/nmap-logo.svg" alt="Herramienta 2" height="400px" width="400px" style="border-left: 1px solid #0F0; border-right: 1px solid #0F0; padding-left: 20px; padding-right: 20px;">
+        <div class="contenido">
+            <h2>Nmap</h2>
+            <p>
+                Nmap (Network Mapper) es una herramienta de código abierto utilizada para explorar redes, descubrir 
+                dispositivos y servicios en una red, así como para analizar la seguridad de sistemas informáticos.
+                Fue diseñado para ser una herramienta de escaneo de redes, pero también puede ser utilizado para tareas
+                de descubrimiento de hosts y servicios, auditorías de seguridad y exploración de vulnerabilidades
+                <br>
+                <br>
+                Es importante destacar que el uso de Nmap debe cumplir con las leyes y regulaciones aplicables, y su utilización
+                debe ser ética y legal. Además, Nmap es una herramienta poderosa que puede ser detectada por sistemas de seguridad,
+                por lo que su uso en entornos controlados o con permisos adecuados es esencial.
+            </p>
+            <br>
+            <br>
+            <br>
+            <a href="https://nmap.org/">Nmap Homepage</a>
+        </div>
+    </div>
+
+    <div class="seccion">
+        <img src="docs/hydra.svg" alt="Herramienta 3" height="400px" width="400px" style="border-right: 1px solid #0F0; border-left: 1px solid #0F0;">
+        <div class="contenido">
+            <h2>hydra</h2>
+            <p>
+                Hydra es una herramienta de prueba de penetración y de código abierto que se utiliza para realizar ataques
+                de fuerza bruta y ataques de diccionario en sistemas y servicios. Es especialmente conocida por 
+                su capacidad para realizar ataques de fuerza bruta contra servicios que requieren autenticación, 
+                como servidores FTP, SSH, telnet, HTTP, entre otros.
+                <br>
+                <br>
+                Es importante destacar que el uso de herramientas como Hydra para realizar ataques de fuerza bruta
+                o ataques de diccionario sin el permiso adecuado es ilegal y va en contra de las políticas éticas y de seguridad.
+                Dichas herramientas deben utilizarse exclusivamente con permisos legales y para propósitos éticos, como pruebas
+                de seguridad autorizadas y auditorías de penetración.
+            </p>
+            <br>
+            <br>
+            <br>
+            <a href="https://github.com/vanhauser-thc/thc-hydra">Hydra Homepage</a>
+        </div>
+    </div>
+
+    <div class="seccion">
+        <img src="docs/meta.png" alt="Herramienta 4" height="400px" width="400px" style="border-left: 1px solid #0F0; border-right: 1px solid #0F0; padding-left: 20px; padding-right: 20px;">
+        <div class="contenido">
+            <h2>Metasploit</h2>
+            <p>
+                Metasploit Framework es una plataforma de código abierto utilizada para el desarrollo, prueba
+                y ejecución de exploits contra sistemas informáticos. Es una herramienta integral que proporciona
+                un conjunto de utilidades y recursos para realizar pruebas de seguridad, pruebas de penetración
+                y evaluaciones de vulnerabilidades. 
+                <br>
+                <br>
+                Es importante señalar que el uso de Metasploit Framework debe realizarse de manera ética y legal.
+                La herramienta debe utilizarse con el permiso adecuado y en entornos controlados para pruebas de seguridad
+                y auditorías de penetración autorizadas. El uso indebido de Metasploit o la realización de actividades
+                ilegales con la herramienta va en contra de sus principios éticos.
+            </p>
+            <br>
+            <br>
+            <br>
+            <a href="https://www.metasploit.com/">Metasploit-Framework Homepage</a>
+        </div>
+    </div>
+
+    <div class="seccion">
+        <img src="docs/netcat.svg" alt="Herramienta 5" height="400px" width="400px" style="border-right: 1px solid #0F0; border-left: 1px solid #0F0;">
+        <div class="contenido">
+            <h2>Netcat</h2>
+            <p>
+                La herramienta Netcat (también conocida como nc) es una utilidad de red que ha existido por mucho tiempo
+                y se utiliza para la transferencia de datos a través de conexiones de red utilizando los protocolos TCP o UDP.
+                Netcat es conocido por su simplicidad y versatilidad, y es utilizado para una variedad de propósitos, desde
+                pruebas de red hasta transferencia de archivos y depuración de conexiones.
+                <br>
+                <br>
+                Ten en cuenta que la disponibilidad y características específicas de Netcat pueden variar según la implementación
+                y la versión. Además, es posible que haya implementaciones mejoradas como ncat, que forma parte del conjunto de
+                herramientas Nmap.
+            </p>
+            <br>
+            <br>
+            <br>
+            <a href="https://nmap.org/ncat/">Netcat Homepage</a>
+        </div>
+    </div>
+
+    <div class="seccion">
+        <img src="docs/hashcat.svg" alt="Herramienta 6" height="400px" width="400px" style="border-left: 1px solid #0F0; border-right: 1px solid #0F0; padding-left: 20px; padding-right: 20px;">
+        <div class="contenido">
+            <h2>hashcat</h2>
+            <p>D
+                Hashcat es una herramienta de código abierto utilizada para realizar ataques de fuerza bruta o de diccionario
+                en hashes de contraseñas. Su objetivo principal es recuperar contraseñas olvidadas o descifrar contraseñas mediante
+                la prueba de combinaciones posibles hasta encontrar la correcta. Hashcat es especialmente conocido
+                por su capacidad de rendimiento y soporte para una amplia variedad de algoritmos de hash.
+                <br>
+                <br>
+                Es importante destacar que el uso de Hashcat debe realizarse de manera ética y legal. El descifrado de contraseñas
+                sin el permiso explícito del propietario del sistema es ilegal y va en contra de las prácticas éticas y de seguridad.
+                Hashcat se utiliza principalmente con fines de seguridad, como pruebas de penetración y auditorías de contraseñas
+                en entornos controlados y con permisos adecuados.
+            </p>
+            <br>
+            <br>
+            <br>
+            <a href="https://hashcat.net/hashcat/">Hashcat Homepage</a>
+        </div>
+    </div>
+
+    <div class="seccion">
+        <img src="docs/sqlmap.svg" alt="Herramienta 7" height="400px" width="400px" style="border-right: 1px solid #0F0; border-left: 1px solid #0F0;">
+        <div class="contenido">
+            <h2>Sqlmap</h2>
+            <p>
+                SQLMap es una herramienta de prueba de penetración de código abierto que automatiza la detección y explotación
+                de vulnerabilidades de inyección SQL en aplicaciones web. Su objetivo principal es ayudar a los profesionales
+                de seguridad y a los investigadores a identificar y aprovechar fallos de seguridad en bases de datos relacionales.
+                <br>
+                <br>
+                Es importante destacar que SQLMap debe utilizarse de manera ética y legal, con el permiso del propietario del
+                sistema o aplicación web. Utilizar herramientas de prueba de penetración sin autorización explícita puede violar
+                las leyes y reglamentaciones aplicables.
+            </p>
+            <br>
+            <br>
+            <br>
+            <a href="https://sqlmap.org/">Sqlmap Homepage</a>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p>&copy; 2024 CyberSec Hacker. Todos los derechos reservados. r4nc0x</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
